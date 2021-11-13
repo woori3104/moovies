@@ -1,21 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import AppLoading from "expo-app-loading";
+import React , {useState} from 'react';
+import { Text } from "react-native"
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+  const [ready, setReady] = useState(false);
+  // onFinish는 로딩이 끝나면 호출되는 함수
+  const onFinish = () => setReady(true);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  const startLoading = async () => {};
+  if (!ready) {
+    return (
+      // AppLoading을 렌더링할 때까지 splash screen이 계속 떠있게함
+      <AppLoading
+        startAsync={startLoading}
+        onFinish={onFinish}
+        onError={console.error}
+      />
+    );
+  }
+  return <Text>We are done loading!</Text>;
+}
