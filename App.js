@@ -1,3 +1,5 @@
+import AppLoading from "expo-app-loading";
+import React, { useState } from "react";
 import * as Font from "expo-font";
 import { Text, Image } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
@@ -17,14 +19,14 @@ const loadImages = (images) =>
   });
 
 export default function App() {
-  const [assets] = useAssets([require("./my-face.jpeg")]);
+  const [assets] = useAssets([require("./landers.jpeg")]);
   const [loaded] = Font.useFonts(Ionicons.font);
   const [ready, setReady] = useState(false);
   const onFinish = () => setReady(true);
   const startLoading = async () => {
     const fonts = loadFonts([Ionicons.font]);
     const images = loadImages([
-      require("./my-face.jpeg"),
+      require("./landers.jpeg"),
       // 문자열을 보내줄경우 -> prefetch
       "https://reactnative.dev/img/oss_logo.png",
     ]);
