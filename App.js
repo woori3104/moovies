@@ -4,6 +4,8 @@ import * as Font from "expo-font";
 import { Text, Image } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { Asset, useAssets } from "expo-asset";
+import { NavigationContainer } from "@react-navigation/native";
+import Tabs from "./navigation/Tabs";
 
 const loadFonts = (fonts) => fonts.map((font) => Font.loadAsync(font));
 
@@ -42,5 +44,10 @@ export default function App() {
       />
     );
   }
-  return <Text>We are done loading!</Text>;
+  return (
+    // Tabs를 렌더링 하기전엔 반드시 NavigationContainer를 먼저 렌더링 해줘야함 
+    <NavigationContainer>
+      <Tabs />
+    </NavigationContainer>
+  );
 }

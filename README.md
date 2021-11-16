@@ -27,3 +27,9 @@ protected void onCreate(Bundle savedInstanceState) {
   super.onCreate(null);
 }
 ```
+
+# Tab Navigation 
+
+```
+npm install @react-navigation/bottom-tabs
+```
