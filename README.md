@@ -33,3 +33,10 @@ protected void onCreate(Bundle savedInstanceState) {
 ```
 npm install @react-navigation/bottom-tabs
 ```
+
+# Compile Error
+```
+Cycle in dependencies between targets 'Pods-MyAppName' and 'RxCocoa'; building could produce unreliable results. This usually can be resolved by moving the target's Headers build phase before Compile Sources. Cycle path: Pods-MyAppName → RxCocoa → Pods-MyAppName
+```
+가 발생한는 경우 xcode에서 Legacy building으로 변경할것 
+
