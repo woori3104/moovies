@@ -40,3 +40,8 @@ Cycle in dependencies between targets 'Pods-MyAppName' and 'RxCocoa'; building c
 ```
 가 발생한는 경우 xcode에서 Legacy building으로 변경할것 
 
+# Stack Navigation 
+
+```
+npm install @react-navigation/native-stack
+```
