@@ -45,3 +45,10 @@ Cycle in dependencies between targets 'Pods-MyAppName' and 'RxCocoa'; building c
 ```
 npm install @react-navigation/native-stack
 ```
+
+# styled Components 
+
+```
+npm install react-native-web
+npm install styled-components
+```
