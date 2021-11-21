@@ -76,3 +76,8 @@ npm install @types/styled-components @types/styled-components-react-native -D
 ```
 npm i react-native-web-swiper --save
 ```
+
+# image blur 
+```
+npm install expo-blur
+```
