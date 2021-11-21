@@ -75,6 +75,8 @@ npm install @types/styled-components @types/styled-components-react-native -D
 # swipe
 ```
 npm i react-native-web-swiper --save
+// native용 swiper
+npm i --save react-native-swiper@next
 ```
 
 # image blur 
