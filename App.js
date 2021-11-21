@@ -9,6 +9,7 @@ import Root from "./navigation/Root";
 import { ThemeProvider } from "styled-components/native";
 import { darkTheme, lightTheme } from "./styled";
 
+
 const loadFonts = (fonts) => fonts.map((font) => Font.loadAsync(font));
 
 const loadImages = (images) =>

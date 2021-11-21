@@ -51,4 +51,23 @@ npm install @react-navigation/native-stack
 ```
 npm install react-native-web
 npm install styled-components
+
+// typescript
+npm install @types/styled-components @types/styled-components-react-native -D
+```
+
+# Typescript 
+- Adding TypeScript to an Existing Project
+  - 기존 프로젝트에 타입스크립트 추가 
+  ```
+  npm install -D typescript @types/jest @types/react @types/react-native @types/react-test-renderer
+  ```
+  - typeScript config file 추가
+  - index.js는 삭제하지말고 그상태로 유지, 나머지는 tsx로 변경
+  - 
+
+
+# swipe
+```
+npm i react-native-web-swiper --save
 ```
