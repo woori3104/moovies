@@ -64,7 +64,12 @@ npm install @types/styled-components @types/styled-components-react-native -D
   ```
   - typeScript config file 추가
   - index.js는 삭제하지말고 그상태로 유지, 나머지는 tsx로 변경
-  - 
+  - ref 
+  ```
+  https://reactnative.dev/docs/typescript#adding-typescript-to-an-existing-project
+
+  https://styled-components.com/docs/api#typescript
+  ```
 
 
 # swipe
